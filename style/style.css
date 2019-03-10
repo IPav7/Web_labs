@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0rem;
+    font-family: Futura, sans-serif;
+}
+
+.canvas-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+   /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8f9ce1, #859ee1, #7ba0e0, #729adb, #6995d6, #608fd2, #568acd);    background-repeat: no-repeat;*/
+	background: #C94A4A; /* Для браузеров, которые не поддерживают градиенты */
+ background: -webkit-linear-gradient(left, #C94A4A 30%, #F2C14E 70%, #4D9078); /* Для Safari 5.1 - 6.0 */
+ background: -o-linear-gradient(left, #C94A4A 30%, #F2C14E 70%, #4D9078); /* Для Opera 11.1 - 12.0 */
+ background: -moz-linear-gradient(left, #C94A4A 30%, #F2C14E 70%, #4D9078); /* Для Firefox 3.6 - 15 */
+ background: linear-gradient(left, #C94A4A 30%, #F2C14E 70%, #4D9078); /* Стандартный синтаксис */
+    height: 100vh;   
+}
+#canvas {
+    width: 100%;
+}
+
+header {    
+    min-height: 100vh;
+}
+
+#title-header {
+    display: flex;  
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: center;
+    height: 100vh;
+    font-size: 5vmin;
+    opacity: 1;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0;
+}
+
+.container-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-header {
+    width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    position: fixed;
+}
+
+li img {
+    margin-left: 15px;
+    width: 2.5vw;
+}
+footer {
+    padding: 5vh 0;
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /*background-color: #DFF30F;    */
+		background: #F2C14E; /* Для браузеров, которые не поддерживают градиенты */
+ background: -webkit-linear-gradient(left top, #F2C14E, #F78154); /* Для Safari 5.1 - 6.0 */
+ background: -o-linear-gradient(bottom right, #F2C14E, #F78154); /* Для Opera 11.1 - 12.0 */
+ background: -moz-linear-gradient(bottom right, #F2C14E, #F78154); /* Для Firefox 3.6 - 15 */
+ background: linear-gradient(to bottom right, #F2C14E, #F78154); /* Стандартный синтаксис */
+}
+
+.footer-text {
+    text-align: center;
+    color: gray;
+    font-size: 2.5vmin;
+}
+
+.selection {
+    height: 100vh;
+	/*
+    background-image: linear-gradient(to right top, #ffc9e8, #f6cef2, #ecd3f9, #e3d8fd, #dbddff, #d5e2ff, #d1e7ff, #d0ebff, #d2f1ff, #d6f6fe, #dcfbfe, #e3fffd);
+	*/
+	background: #F2C14E; /* Для браузеров, которые не поддерживают градиенты */
+ background: -webkit-linear-gradient(left top, #F2C14E, #F78154); /* Для Safari 5.1 - 6.0 */
+ background: -o-linear-gradient(bottom right, #F2C14E, #F78154); /* Для Opera 11.1 - 12.0 */
+ background: -moz-linear-gradient(bottom right, #F2C14E, #F78154); /* Для Firefox 3.6 - 15 */
+ background: linear-gradient(to bottom right, #F2C14E, #F78154); /* Стандартный синтаксис */
+}
+.skills {
+    padding: 20vh 0;
+}
+
+.skill-text {
+    text-align: center;
+    font-size: 5vmin;
+    height: 15vh;
+}
+
+.skill-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px;
+    border: 3px;
+    overflow: hidden;    
+}
+
+.skill-item {
+    padding: 1.5vw;
+    margin: 1.5vw;
+    width: 22vh;
+    height: 22vw;
+}
+
+.skill-item img{
+    max-width: 100%;
+    max-height: 100%;
+    width: 20vw;
+    height: 20vh;
+}
